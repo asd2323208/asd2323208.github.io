@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>苹果iOS10视差背景搜索框代码 - A5源码</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div id="top-image">
+  <div id="content" class="container center-block">
+    <div class="jumbotron">
+      <div class="container">
+        <h1>搜索功能</h1>
+        <p>这是一个简单的实例演示，呼吁更多的关注，精选内容或信息的简单的大屏幕式组件。</p>
+        <div class="input-group input-group-lg"> <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></span>
+          <input type="text" class="form-control" placeholder="输入关键词" aria-describedby="sizing-addon1">
+          <span class="input-group-btn">
+          <button class="btn btn-default" type="button">搜 索</button>
+          </span> </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/ios-parallax.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#top-image').iosParallax({
+	movementFactor: 50
+  });
+});
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：360、FireFox、Chrome、Opera、傲游、搜狗、世界之窗. 不支持Safari、IE8及以下浏览器。</p>
+<p>来源：<a href="http://down.admin5.com/" target="_blank">A5源码</a></p>
+</div>
+</body>
+</html>
