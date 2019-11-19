@@ -19,7 +19,9 @@
             $.ajax({
                 url:'https://api.shenjian.io/?appid=67f8e5b32112a8ac18da2f3b7da57dfa',
                 type:'GET',
-                dataType:'json',
+                dataType:"jsonp",
+                jsonpCallback: "appid=67f8e5b32112a8ac18da2f3b7da57dfa", //这里的值需要和回调函数名一样
+                jsonp: false,
                 success:function (data) {
                     console.log(data)
                 }
