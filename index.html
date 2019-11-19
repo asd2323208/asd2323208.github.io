@@ -11,10 +11,19 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/ios-parallax.js"></script>
     <script type="text/javascript">
+
         $(document).ready(function () {
             $('#top-image').iosParallax({
                 movementFactor: 50
             });
+            $.ajax({
+                url:'https://api.shenjian.io/?appid=67f8e5b32112a8ac18da2f3b7da57dfa',
+                type:'GET',
+                dataType:'json',
+                success:function (data) {
+                    console.log(data)
+                }
+            })
         });
 
         function init() {
@@ -63,7 +72,12 @@
                            aria-describedby="sizing-addon1">
                     <span class="input-group-btn">
           <button class="btn btn-default" type="button" onclick="search()">搜 索</button>
-          </span></div>
+
+          </span>
+                    </p>
+                </div>
+                <p>最近热搜词：</p><br>
+                <p id="hot" name="hot">
             </div>
         </div>
     </div>
