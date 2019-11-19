@@ -11,31 +11,34 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/ios-parallax.js"></script>
     <script type="text/javascript">
+        var myjson;
 
         $(document).ready(function () {
             $('#top-image').iosParallax({
                 movementFactor: 50
             });
             $.ajax({
-                url:'https://api.shenjian.io/?appid=67f8e5b32112a8ac18da2f3b7da57dfa',
-                type:'GET',
-                dataType:"jsonp",
-                jsonpCallback: "appid=67f8e5b32112a8ac18da2f3b7da57dfa", //这里的值需要和回调函数名一样
-                jsonp: false,
-                success:function (data) {
-                    console.log(data)
+                url: 'https://api.shenjian.io/?appid=67f8e5b32112a8ac18da2f3b7da57dfa&callback=?',
+                type: 'GET',
+                dataType: "jsonp",
+                success: function (data) {
+                    console.log(data);
+                    myjson = data;
                 }
             })
         });
 
         function init() {
             document.form.sel.value = 1;
+            for (i = 0; i < 5; i++) {
+                document.getElementById("hot").innerHTML += (myjson.data[i].keyword + "<br>");
+            }
         }
 
-        document.onkeydown=function(){
-          if (event.keyCode == 13){
-            search();
-          }
+        document.onkeydown = function () {
+            if (event.keyCode == 13) {
+                search();
+            }
         }
 
         function search() {
@@ -78,10 +81,12 @@
           </span>
                     </p>
                 </div>
-                <p>最近热搜词：</p><br>
+                <p>最近热搜词：</p>
                 <p id="hot" name="hot">
             </div>
+
         </div>
+
     </div>
 </div>
 
