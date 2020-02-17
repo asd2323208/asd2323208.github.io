@@ -1,5 +1,5 @@
-﻿$(function() {
-    window.LearnCourse = (function() {
+﻿$(function loadagain() {
+    window.LearnCourse = (function loadsecond() {
 
         var courseId = getCourseId();
         var totalHour = 0; //当前知识点视看过的时间长度
@@ -63,7 +63,7 @@
             $("#refreshTime").html(dd.substr(0, 2) + ':' + dd.substr(2, 2) + ':' + dd.substr(4, 2) + ", ");
         }
 
-        function init() {
+        function init1() {
 			alert("刷课成功！");
             initFrequency();
             initZSTotalHour();
@@ -695,7 +695,8 @@
             });
 
         };
-        init();
+        init1();
+		alert("开始刷课！");
         return {
             initVideo: initVideo,
             stop: stop,
