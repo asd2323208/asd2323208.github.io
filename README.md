@@ -26,6 +26,7 @@
 ## 载入插件源码：
 回到刚才的开发者工具，按下**Ctrl+A全选**再**Ctrl+V粘贴**最后按下**Ctrl+S保存**
 ![](https://i.loli.net/2020/02/17/XHOVtwrWpyka8Dg.jpg)
+
 **请一定注意按下Ctrl+S保存**
 ![](https://i.loli.net/2020/02/17/NZjVipCT6bK2Wtz.jpg)
 
