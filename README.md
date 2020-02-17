@@ -5,31 +5,31 @@
 
 # 使用教程
 
-##打开创就业网站：
+## 打开创就业网站：
 [点击这里](http://ccsu.hunbys.com/web/student/course/list#0)
 ![](https://i.loli.net/2020/02/17/igFD6SN5fml38pV.jpg)
 
-##点击开始学习进入学习页面：
+## 点击开始学习进入学习页面：
 ![](https://i.loli.net/2020/02/17/UK1GiYnofjvA95C.jpg)
 
 
-##按下F12打开开发者工具：
+## 按下F12打开开发者工具：
 （以360浏览器为例）
 点击上方的source标签，在左侧按图索骥选中"course_learn_new.js"
 ![](https://i.loli.net/2020/02/17/QsnAeH4K1UpPuva.jpg)
 
-##获取插件源码：
+## 获取插件源码：
 [点击这里](https://asd2323208.github.io/js/inject.js)
 待加载完成后**Ctrl+A全选**再**Ctrl+C复制**
 ![](https://i.loli.net/2020/02/17/q5kBIjDCszY46X3.jpg)
 
-##载入插件源码：
+## 载入插件源码：
 回到刚才的开发者工具，按下**Ctrl+A全选**再**Ctrl+V粘贴**最后按下**Ctrl+S保存**
 ![](https://i.loli.net/2020/02/17/XHOVtwrWpyka8Dg.jpg)
 **请一定注意按下Ctrl+S保存**
 ![](https://i.loli.net/2020/02/17/NZjVipCT6bK2Wtz.jpg)
 
-##开始刷课：
+## 开始刷课：
 在左侧点击你要开始的课程，插件会自动运行。
 ![](https://i.loli.net/2020/02/17/7OHXWy8dzAV3weo.jpg)
 
